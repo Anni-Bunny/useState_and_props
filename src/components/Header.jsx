@@ -1,12 +1,12 @@
-function Header(props){
-   if (props.version === 'ka')
+function Header({version}){
+   if (version === 'ka')
    {
        return(
            <header>
                <h1>ქართული</h1>
            </header>
        )
-   } else if (props.version === 'en'){
+   } else if (version === 'en'){
        return(
            <header>
                <h1>English</h1>
